@@ -20,7 +20,6 @@ public class HomePage extends BasePage {
     public SignInPage clickSignIn() throws InterruptedException {
         clickOnButton(signInBtn);
         ExtentTestManager.getTest().log(LogStatus.INFO,"Clicked on Sign In button");
-        // Thread.sleep(3000);
         return new SignInPage(driver);
     }
 }
